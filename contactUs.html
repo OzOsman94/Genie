@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css"><script src="js/jquery.js"></script>
+  <title>career</title>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+  <script type="text/javascript"src="main.js"></script>
+  <script type="text/javascript" src="general.js"></script>
+</head>
+
+<div class="logo">
+  <center><img class="logo" src="/Users/ozosman/Desktop/Genie/images/asdsadsda.png" style="opacity: 70%; height: 320px"></center>
+</div>
+<br><br><br>
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="findskill.html">Find & Hire</a></li>
+    <li><a href="meals.html">Meals</a></li>
+    <li><a href="contactUs.html">Contact</a></li>
+    <li><a href="aboutUs.html">About</a></li>
+    <li><a href="chatBox.html">Chat</a></li>
+  </ul>
+  
+<body>
+  <div class="page"><!-- Start of main page -->
+  <header>
+    <button class="button button1"><userName id="userName">
+      </userName></button>
+      <h1><center><img id="logo" src="images/logo.png"></center></h1>
+  </header><!-- /header -->
+  <h1><center>SETTINGS</center></h1>
+  <nav>
+    <div class="container" id="container">           
+      <div class="dropdown" style="border:none;">
+        <script src="nav.js"></script>
+        <div id="divdropbtn"><button onclick="myFunction()" class="dropbtn">Menu Panel</button></div>  
+        <div id="myDropdown" class="dropdown-content" style="">
+          <a href="index.html" target="_parent">Home</a>
+          <a href="chatBox.html" target="_parent">Chat box</a>
+          <a href="reportIssues.html" target="_parent">Report Issues</a>
+          <a href="aboutUs.html" target="_self">About Us</a>
+        </div>
+      </div>
+      <div class="signout" style=""><button onclick="signout()" id="signout">sign out</button></div>
+    </div>
+  </nav>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Contact</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header" style="text-shadow: none">
+      <span class="close">&times;</span>
+        <p style="text-shadow: none"><p><img src="images/telegram.png" style="width: 4.1%; float:left">&nbsp;<img src="images/662px-WhatsApp.svg.png"style="width: 4.4%; float:left"><a style="float:right">+44(0)7377514512</a></p>
+        <p>&nbsp;<img src="images/1200px-Hangouts_icon.svg.png" style="width: 3.5%; float:left">&nbsp;<img src="images/gmail-512.png" style="width: 4%; float:left"><a style="float:right">ohass001@gmail.com</a></p>
+        <p>&nbsp;<img src="images/instagram.jpg" style="width:5%; float:left"><a style="float:right">os_94</a></p>
+        <p>&nbsp;<img src="images/facebookIcon.jpeg" style="width:4%; float:left"><a style="float:right">Hassan Osman</a></p></p>
+    </div>
+      <h3>Osman Hassan</h3>
+    </div>
+  </div>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</div><!-- /content -->
+
+</body>
+<footer> 
+	<div data-role="footer" data-position="fixed">
+    <center><h6>COPYRIGHT © 2021 Osman Hassan</h6></center>
+  </div><!-- /footer -->
+</footer><!-- /footer -->
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Poke Chat</title>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+	<link rel="stylesheet" href="chatroom.css"/>
+    <script src="chatroom.js"></script>
+
+</head>
+<div class="logo">
+  <center><img class="logo" src="/Users/ozosman/Desktop/Genie/images/asdsadsda.png" style="opacity: 70%; height: 320px"></center>
+</div>
+<br><br><br>
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="findskill.html">Find & Hire</a></li>
+    <li><a href="meals.html">Meals</a></li>
+    <li><a href="contactUs.html">Contact</a></li>
+    <li><a href="aboutUs.html">About</a></li>
+    <li><a href="chatBox.html">Chat</a></li>
+  </ul>
+<body>
+	
+	<div id="wrapper">
+		<div id="menu">
+			<p class="welcome"> Welcome to poke chat <br><br>
+
+			</p>
+			
+			<div id="chatbox">
+				<ul id="messages">
+
+
+					
+				</ul>
+				
+			</div>	
+			<form onsubmit="return sendMessage()">
+			<input type="text" name="" id="message" class="usermsg" size="63" placeholder="Insert Message" autocomplete="off">
+			<input type="submit" name="" class="button">
+			</form>
+
+		</div>
+
+		
+
+
+
+
+
+
+
+
+	</div>
+	
+</body>
+<script>
+	let myName = prompt("enter user")
+
+	const sendMessage =() =>{
+		let message = document.getElementById("message").value
+		firebase.database().ref("messages").push().set({
+			"sender": myName,
+			"message": message 
+		});
+		let message1= document.getElementById("message")
+		message1.value=""
+			return false;
+	}
+
+	firebase.database().ref("messages").on("child_added", function (snap){
+		var html = "";
+		html += "<li>";
+		html += "{"= snap.val().sender +"} :" + snap.val().message;
+		html += "</li>"
+		document.getElementById("messages").innerHTML += html;
+	})
+</script>
+</html>

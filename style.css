@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html 
+{
+  font-family:  "Lucida Sans", sans-serif;
+  font-size:  80%;
+  margin: 0;
+  padding:  0;
+  background-repeat:  no-repeat;
+  background-attachment:  fixed;
+  background-size: 100%;
+  border-radius:  5px;
+  border-width: 2px;
+}
+
+* 
+{
+  box-sizing: border-box;
+}
+
+body 
+{
+  font-family: 'Oper Sans;', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  background-image: url('BG.jpeg');
+  background-color:  goldenrod;
+  background-repeat: no-repeat;
+  border-radius: 8px
+  background-image-height:  auto;
+  background-size: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  margin-right: 10%;
+  margin: 0;
+}
+
+
+.userBtn {
+  position: relative;
+  width: 50%;
+  float: right;
+}
+
+.userName
+{
+  line-height: 157px;
+  float:  right;
+  height: 70px; 
+  width:  70px; 
+  background: url(https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png);
+  background-size:  cover;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.userBtn:hover .image {
+  opacity: 0.3;
+}
+
+.userBtn:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+header
+{
+  border-color: transparent;
+  border-radius:  5px;
+  border-width: 2px;
+  border-style: solid;
+  font-family:  fantasy;
+  text-align: center;
+  margin-top: auto;
+  padding:  15px;
+  height: 20%;
+}
+
+h1 
+{
+  font-weight: 300;
+  margin-top: 200px;
+  margin-bottom: 30px;
+  padding-top:1.75%;
+}
+
+h2
+{
+  font-weight: 300;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+div 
+{
+  background-color: transparent;
+  border-color: transparent;
+  border-radius:  5px;
+  border-width: 2px;
+  border-style: solid;
+}
+h2 
+{
+  text-align: center;
+}
+
+h3 
+{
+  font-family:  cursive;
+  font-size:  20px;
+  color:  black;
+  text-align: center;
+}
+
+p 
+{
+  font-family:  monospace;
+  font-size:  15px;
+  text-align: center;
+}
+
+a 
+{
+  font-family:  verdana;
+  font-size:  15px;
+  background-color: #292e2b;
+}
+
+b 
+{
+  text-align: center;
+  float:  center;
+  padding-left: 3;
+  padding-right: 3;
+  padding-top:  3;
+  padding-bottom: 3;
+  font-family: verdana;
+  font-size: 20px;
+}
+
+.logo
+{ 
+  width:auto;
+  height:auto;
+  float:left;
+}
+
+
+#btn1
+{
+  position:relative; 
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  min-height: 100vh; 
+  justify-content: center; 
+  align-items: center; 
+  display: inherit;
+}
+
+.main
+{
+  border-radius:  5px;
+  border-width: 2px;
+  border-style: solid;
+  font-family: OpenSans-Regular, sans-serif;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: auto, auto;
+  overflow: hidden;
+}
+
+
+.signout
+{
+  float:right; 
+  border:none; 
+  margin-top: 6px; 
+  margin-right: 4px;
+  border-radius: 2px; 
+  border-color: darkgrey;
+  position: relative;
+}
+
+#map{
+  height: 400px;
+  width: 100px;
+  position: fixed;
+/*  top: 50%;
+  right: 50%;
+  z-index: 1000;*/
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+

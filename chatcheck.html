@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>pokechat</title>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+    <script src="chat.js"></script>
+    <script src="main.js"></script>
+
+	
+</head>
+<body>
+	
+	<!-- create a form to send message -->
+<form onsubmit="return sendMessage();">
+    <input id="private"  autocomplete="off">
+    <input id="message" placeholder="Enter message" autocomplete="off" >
+    <input type="submit">
+</form>
+     
+
+<!-- create a list -->
+<ul id="messages"></ul>
+<ul id="list" style="append: right; border: 1px solid;"></ul>
+
+
+     
+
+</body>
+</html>

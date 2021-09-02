@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css"><script src="js/jquery.js"></script>
+	<title>chatBox</title>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+  <script src="main.js"></script>
+  <script type="text/javascript" src="general.js"></script>
+</head>
+
+<div class="logo">
+  <center><img class="logo" src="/Users/ozosman/Desktop/Genie/images/asdsadsda.png" style="opacity: 70%; height: 320px"></center>
+</div>
+<br><br><br>
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="findskill.html">Find & Hire</a></li>
+    <li><a href="meals.html">Meals</a></li>
+    <li><a href="contactUs.html">Contact</a></li>
+    <li><a href="aboutUs.html">About</a></li>
+    <li><a href="chatBox.html">Chat</a></li>
+  </ul>
+<body>
+<div class="page"><!-- Start of main page -->
+  <header>
+    <button class="button button1"><userName id="userName">
+      </userName></button>
+      <h1><center><img id="logo" src="images/logo.png"></center></h1>
+  </header><!-- /header -->
+
+<h1><center>CHAT BOX</center></h1>
+  <header>
+      <div class="logo">
+        <center><img class="logo" src="/Users/ozosman/Desktop/Genie/images/logo.png"></center><br>
+      </div><br>
+      <div class="userBtn">
+        <button class="button userName"><userName id="userName">
+        </userName></button>
+      </div><br><br><br><br><br>
+      <div class="signout">
+        <div class="signout" style="">
+          <button onclick="signout()" id="signout">sign out</button>
+        </div>
+      </div>
+    </header><!-- /header -->
+    <ul class="sidenav">
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="contactUs.html">Contact</a></li>
+    <li><a href="aboutUs.html">About</a></li>
+    <li><a href="chatBox.html">Chat</a></li>
+  </ul>
+  <br><br><br><br><br>
+  <!-- Start of main page -->
+
+	<!-- create a form to send message -->
+  <form onsubmit="return sendMessage();">
+      <input id="message" placeholder="Enter message" autocomplete="off">
+      <input type="submit">
+  </form>     
+  <script src="sendMsg.js"></script>
+  <!-- create a list -->
+  <ul id="messages"></ul>
+  <script src="incomingMsg.js"></script>
+</div>
+</body><br>
+  <center><h6>COPYRIGHT © 2021 Osman Hassan</h6></center>
+</html>

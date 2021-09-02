@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Skill finder</title>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+    <script src="findskill.js"></script>
+    <script src="chat.js"></script>
+    <script src="main.js"></script>
+
+	
+</head>
+
+<div class="logo">
+  <center><img class="logo" src="/Users/ozosman/Desktop/Genie/images/asdsadsda.png" style="opacity: 70%; height: 320px"></center>
+</div>
+<br><br><br>
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="findskill.html">Find & Hire</a></li>
+    <li><a href="meals.html">Meals</a></li>
+    <li><a href="contactUs.html">Contact</a></li>
+    <li><a href="aboutUs.html">About</a></li>
+    <li><a href="chatBox.html">Chat</a></li>
+  </ul>
+<body>
+
+<input id="skill"  autocomplete="off">
+<button type="button" onclick= "findSkill()">find skill</button>
+<ul id="users"></ul>
+<ul id="list" style="append: right; border: 1px solid;"></ul>
+
+
+
+
+     
+
+</body>
+</html>
