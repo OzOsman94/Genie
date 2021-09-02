@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head><head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css"><script src="js/jquery.js"></script>
+	<title>EmailValidation</title>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+</head>
+<body>
+  <header>
+    <button class="button button1"><userName id="userName">
+      </userName></button>
+      <h1><center><img id="logo" src="images/logo.png"></center></h1>
+  </header><!-- /header -->
+	<div>
+		<h3><center>Email Validation</center></h3>
+		<form>
+			<div class="inputBox" action="#">
+				<input type="text" name="" id="email" placeholder="Enter Email Address" onkeydown="validation()">
+				<span id="text"></span>
+			</div>
+		</form>
+	</div>
+	<script  type="text/javascript">
+		function validation() {
+			var form = document.getElementById("form");
+			var email = document.getElementById("email").value;
+
+			var text= document.getElementById("text")
+			var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+			if (email.match(pattern)) {
+				form.classList.add("valid");
+				form.classList.remove("invalid");
+			}
+			else
+			{
+				form.classList.remove("valid");
+				form.classList.add("invalid");
+			}
+		}
+	</script>
+</body><br>
+<footer> 
+	<div data-role="footer" data-position="fixed">
+          <center><h6>COPYRIGHT © 2021 Osman Hassan</h6></center>
+    </div><!-- /footer -->
+</footer><!-- /footer -->
+</html>
